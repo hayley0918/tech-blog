@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.side-bar{
+    width: 25%;
+    background-color: #fff;
+}
