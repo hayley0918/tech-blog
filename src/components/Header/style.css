@@ -16,3 +16,8 @@
 .headerMenu a:hover{
     color: #5f9ea0;
 }
+
+.sns-icons img{
+    width: 15%;
+    margin: 0 5px;
+}

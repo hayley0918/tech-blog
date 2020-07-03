@@ -9,8 +9,10 @@ const Header = props =>{
                <a href="">About Me</a>
                <a href="">Contact Me</a>
            </nav>
-           <div>
-               social media links
+           <div className="sns-icons">
+               <a href="https://github.com/hayley0918"><img src={require("../../assets/icons/github.png")} alt="github icon"/></a>
+               <a href="https://www.linkedin.com/in/hayleychoi/"><img src={require("../../assets/icons/linkedin.png")} alt="linkedin icon"/></a>
+               <a href="https://techyhayley-portfolio.netlify.app/"><img src={require("../../assets/icons/portfolio.png")} alt="linkedin icon"/></a>
            </div>
        </header>
     )

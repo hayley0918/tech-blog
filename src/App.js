@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Contact from './containers/Contact'
 import Post from './containers/Post'
+import AboutMe from './containers/AboutMe';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Header />
         <Hero />
         <Route path="/" exact component={Home} />
+        <Route path="/about-me" component={AboutMe} />
         <Route path="/contact" component={Contact} />
-        <Route path="/post" component={Post} />
+        <Route path="/post/:postId" component={Post} />
       </div>
     </Router>
   );

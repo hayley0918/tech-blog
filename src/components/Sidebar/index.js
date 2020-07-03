@@ -1,8 +1,19 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './style.css'
 import Card from '../UI/Card'
+import blogPost from '../../data/blog.json'
+import { NavLink } from 'react-router-dom'
+
 
 const Sidebar = (props) =>{
+
+    const [posts, setPosts] = useState([])
+    
+    useEffect(()=>{
+        const posts = blogPost.data
+        setPosts(posts)
+    },posts)
+
     return(
         <div className="side-bar-container">
             <Card style={{marginBottom:"20px", padding:"20px", boxSizing: "border-box"}}>
@@ -13,7 +24,7 @@ const Sidebar = (props) =>{
                     <img src={require("../../blogPostImages/myPhoto.png")} alt="my picture"/>
                 </div>
                 <div className="card-body">
-                    <p className="bio">My name is Hayley. I code, learn and solve the problems.</p>
+                    <p className="bio">My name is Hayley. I code, grow the applications and solve the problems.</p>
                 </div>
             </Card>  
             <Card style={{marginBottom:"20px", padding:"20px", boxSizing: "border-box"}}>
@@ -26,10 +37,18 @@ const Sidebar = (props) =>{
                     <span>Recent posts</span>
                 </div>
                 <div className="recent-posts">
-                    <div className="recent-post">
-                        <h3>Post Title</h3>
-                        <span>2, July, 2020</span>
-                    </div>
+                    {
+                        posts.map(post=>{
+                            return(
+                                <NavLink to={`/post/${post.id}`}>
+                                    <div className="recent-post">
+                                        <h3>{post.blogTitle}</h3>
+                                        <span>{post.postedOn}</span>
+                                    </div>
+                                </NavLink>
+                            )
+                        })
+                    }
                 </div>
             </Card>  
         </div>

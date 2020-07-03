@@ -22,10 +22,19 @@
     margin: 20px 0;
 }
 
-.bio{
+.bio{ 
     font-size: 14px;
     color: #565673;
     font-weight: 300;
+}
+
+.recent-posts{
+    padding: 20px 0;
+}
+
+.recent-post{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
 }
 
 .recent-post h3{
@@ -33,9 +42,11 @@
     letter-spacing: 1px;
     font-size: 14px;
     font-weight: 500;
+    margin: 0;
 }
 
 .recent-post span{
     font-size: 10px;
     font-weight: 400;
+    color: #6c6c66;
 }
