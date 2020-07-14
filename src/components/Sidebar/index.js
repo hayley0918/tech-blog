@@ -24,7 +24,7 @@ const Sidebar = (props) =>{
                     <img src={require("../../blogPostImages/myPhoto.png")} alt="my picture"/>
                 </div>
                 <div className="card-body">
-                    <p className="bio">My name is Hayley. I code, grow the applications and solve the problems.</p>
+                    <p className="bio">My name is Hayley. I code, grow the web applications and solve the problems.</p>
                 </div>
             </Card>  
             <Card style={{marginBottom:"20px", padding:"20px", boxSizing: "border-box"}}>

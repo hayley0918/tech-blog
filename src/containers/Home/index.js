@@ -20,14 +20,35 @@ const Home = props =>{
                 <div style={{width:'70%'}}>
                     <Card style={{marginBottom:'20px'}}>
                         <div className="post-image-wrapper">
-                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/laptop1.jpg')} alt="laptop image"/>
+                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/oop2.jpeg')} alt="laptop image"/>
                         </div>
-                        <div style={{textAlign:'center'}}>
-                            <span>Featured</span>
-                            <h2>OOP</h2>
-                            <span>lorem ipsum</span>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore explicabo quisquam earum dicta, sequi autem ab, alias qui distinctio officia, error voluptatum delectus rem repellat doloribus beatae harum amet quod!</p>
-                            <button>Read More</button>
+                        <div className="home-post-text" style={{textAlign:'center'}}>
+                            <span>Programming</span>
+                            <h2>What is OOP?</h2>
+                            <p>OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them...</p>
+                            <a href="/post/1">Read More</a>
+                        </div>
+                    </Card>
+                    <Card style={{marginBottom:'20px'}}>
+                        <div className="post-image-wrapper">
+                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/restful_api.png')} alt="laptop image"/>
+                        </div>
+                        <div className="home-post-text" style={{textAlign:'center'}}>
+                            <span>Programming</span>
+                            <h2>Rest API</h2>
+                            <p>A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. A RESTful API also referred to as a RESTful web service or REST API is based on representational state transfer (REST), an architectural style and approach to communications often used in web services development...</p>
+                            <a href="/post/2">Read More</a>
+                        </div>
+                    </Card>
+                    <Card style={{marginBottom:'20px'}}>
+                        <div className="post-image-wrapper">
+                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/tdd.png')} alt="laptop image"/>
+                        </div>
+                        <div className="home-post-text" style={{textAlign:'center'}}>
+                            <span>Programming</span>
+                            <h2>TDD</h2>
+                            <p>Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the code is improved so that the tests pass...</p>
+                            <a href="/post/3">Read More</a>
                         </div>
                     </Card>
                 </div>

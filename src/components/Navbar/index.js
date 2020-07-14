@@ -24,12 +24,6 @@ const Navbar = props =>{
                 <li><NavLink to="/about-me">About Me</NavLink></li>
                 <li><NavLink to="post">Posts</NavLink></li>
             </ul>
-            <div className="search">
-                <form onSubmit={submitSerach}>
-                    <input className={searchClass} type="text" placeholder="Search"/>
-                    <img onClick={openSearch} className="searchIcon" src={require("../../assets/icons/search.png")} alt="Search"/>
-                </form>
-            </div>
         </div>
     )
 }

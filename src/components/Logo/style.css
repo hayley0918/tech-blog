@@ -6,5 +6,9 @@
     text-decoration: none;
     color: #333;
     font-size: 40px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.logo img{
+    width: 10%;
 }

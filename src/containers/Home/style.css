@@ -3,7 +3,6 @@
     justify-content: space-between;
 }
 
-
 .side-image-wrapper div{
     width: 100%;
 }
@@ -20,12 +19,15 @@
 }
 
 .post-image-wrapper{
-    height: 450px;
-    overflow: hidden;
+    text-align: center;
 }
 
 .post-image-wrapper img{
-    width: 100%;
+    width: 85%;
     max-height: 100%;
     object-fit: cover;
+}
+
+.home-post-text{
+    padding: 20px 20px;
 }
