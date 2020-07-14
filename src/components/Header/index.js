@@ -7,7 +7,6 @@ const Header = props =>{
            <nav className="headerMenu">
                <a href="">Home</a>
                <a href="">About Me</a>
-               <a href="">Contact Me</a>
            </nav>
            <div className="sns-icons">
                <a href="https://github.com/hayley0918"><img src={require("../../assets/icons/github.png")} alt="github icon"/></a>

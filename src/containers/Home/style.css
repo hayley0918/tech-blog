@@ -1,0 +1,31 @@
+.gallaryPost{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.side-image-wrapper div{
+    width: 100%;
+}
+
+.side-image-wrapper div img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.home-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.post-image-wrapper{
+    height: 450px;
+    overflow: hidden;
+}
+
+.post-image-wrapper img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}

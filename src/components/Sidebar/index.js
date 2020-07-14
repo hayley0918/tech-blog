@@ -12,10 +12,10 @@ const Sidebar = (props) =>{
     useEffect(()=>{
         const posts = blogPost.data
         setPosts(posts)
-    },posts)
+    },[posts])
 
     return(
-        <div className="side-bar-container">
+        <div className="side-bar-container" style={{width: props.width}}>
             <Card style={{marginBottom:"20px", padding:"20px", boxSizing: "border-box"}}>
                 <div className="card-header">
                     <span>About Me</span>
@@ -30,6 +30,11 @@ const Sidebar = (props) =>{
             <Card style={{marginBottom:"20px", padding:"20px", boxSizing: "border-box"}}>
                 <div className="card-header">
                     <span>Social Network</span>
+                    <div className="sns-icons">
+                        <a href="https://github.com/hayley0918"><img src={require("../../assets/icons/github.png")} alt="github icon"/></a>
+                        <a href="https://www.linkedin.com/in/hayleychoi/"><img src={require("../../assets/icons/linkedin.png")} alt="linkedin icon"/></a>
+                        <a href="https://techyhayley-portfolio.netlify.app/"><img src={require("../../assets/icons/portfolio.png")} alt="linkedin icon"/></a>
+                    </div>
                 </div>
             </Card>  
             <Card style={{marginBottom:"20px", padding:"20px", boxSizing: "border-box"}}>
@@ -40,7 +45,7 @@ const Sidebar = (props) =>{
                     {
                         posts.map(post=>{
                             return(
-                                <NavLink to={`/post/${post.id}`}>
+                                <NavLink key={post.id} to={`/post/${post.id}`}>
                                     <div className="recent-post">
                                         <h3>{post.blogTitle}</h3>
                                         <span>{post.postedOn}</span>

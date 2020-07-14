@@ -23,7 +23,6 @@ const Navbar = props =>{
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/about-me">About Me</NavLink></li>
                 <li><NavLink to="post">Posts</NavLink></li>
-                <li><NavLink to="contact">Contact Me</NavLink></li>
             </ul>
             <div className="search">
                 <form onSubmit={submitSerach}>
