@@ -5,22 +5,13 @@ import Card from '../../components/UI/Card'
 
 const Home = props =>{
 
-    const gallaryHeight = 450
-    const gallaryStyle = {
-        height: gallaryHeight+'px',
-        overflow: 'hidden'
-    }
-
-    const sideImageHeight = gallaryHeight/3
-
-
     return(
         <div>
             <section className="home-container">
                 <div style={{width:'70%'}}>
                     <Card style={{marginBottom:'20px'}}>
                         <div className="post-image-wrapper">
-                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/oop2.jpeg')} alt="laptop image"/>
+                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/oop2.jpeg')} alt="oop image"/>
                         </div>
                         <div className="home-post-text" style={{textAlign:'center'}}>
                             <span>Programming</span>
@@ -31,18 +22,18 @@ const Home = props =>{
                     </Card>
                     <Card style={{marginBottom:'20px'}}>
                         <div className="post-image-wrapper">
-                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/restful_api.png')} alt="laptop image"/>
+                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/restful_api.png')} alt="rest_api image"/>
                         </div>
                         <div className="home-post-text" style={{textAlign:'center'}}>
                             <span>Programming</span>
                             <h2>Rest API</h2>
-                            <p>A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. A RESTful API also referred to as a RESTful web service or REST API is based on representational state transfer (REST), an architectural style and approach to communications often used in web services development...</p>
+                            <p>A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. It is also referred to as a RESTful web service or REST API is based on representational state transfer (REST), an architectural style and approach to communications often used in web services development...</p>
                             <a href="/post/2">Read More</a>
                         </div>
                     </Card>
                     <Card style={{marginBottom:'20px'}}>
                         <div className="post-image-wrapper">
-                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/tdd.png')} alt="laptop image"/>
+                            <img style={{margin:'20px 0'}} src={require('../../blogPostImages/tdd.png')} alt="tdd image"/>
                         </div>
                         <div className="home-post-text" style={{textAlign:'center'}}>
                             <span>Programming</span>

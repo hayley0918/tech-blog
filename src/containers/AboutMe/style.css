@@ -1,6 +1,9 @@
 .aboutMe{
     background-color: #fff;
     width: 70%;
+    font-family: sans-serif;
+    letter-spacing: normal;
+    line-height: 1.6;
 }
 
 .aboutMe-wrapper{

@@ -1,5 +1,8 @@
 .blog-post-container{
     width: 70%;
+    font-family: sans-serif;
+    letter-spacing: normal;
+    line-height: 1.6;
 }
 
 .blog-header{
@@ -43,7 +46,7 @@
 }
 
 .post-content{
-    margin: 10px;
+    margin: 30px;
 }
 
 .post-content h3{
@@ -51,10 +54,8 @@
     color: #333;
 }
 
-.post-content p{
-    font-size: 14px;
-    color: #6c6c6c;
-    font-weight: 300;
-    letter-spacing: 1px;
-    padding-bottom: 20px;
+
+article header, main, footer{
+    padding: 20px 0;
+    font-size: 1rem;
 }

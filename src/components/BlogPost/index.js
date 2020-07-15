@@ -13,7 +13,9 @@ const BlogPost = (props) =>{
         postedOn: "",
         author: "",
         blogImage: "",
-        blogText: ""
+        postP1: "",
+        postP2: "",
+        postP3: ""
     })
     const [postId, setPostId] = useState('')
     
@@ -39,7 +41,17 @@ const BlogPost = (props) =>{
                 </div>
                 <div className="post-content">
                     <h3>{post.blogTitle}</h3>
-                    <p>{post.blogText}</p>
+                    <article>
+                        <header>
+                            {post.postP1}
+                        </header>
+                        <main>
+                            {post.postP2}
+                        </main>
+                        <footer>
+                            {post.postP3}
+                        </footer>
+                    </article>
                 </div>
             </Card>
         </div>
