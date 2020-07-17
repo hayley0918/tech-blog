@@ -6,10 +6,17 @@
             "blogTitle" : "What is OOP?",
             "postedOn": "2, July, 2020",
             "author": "Hayley Choi",
-            "blogImage": "oop.jpeg",
+            "blogImage": "OOP.png",
             "postP1": "OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them. This approach to programming is well-suited for programs that are large, complex and actively updated or maintained. Additional benefits of OOP include code reusability, scalability and efficiency. Even when using microservices, developers should continue to apply the principles of OOP. The first step in OOP is to collect all of the objects a programmer wants to manipulate and identify how they relate to each other -- an exercise often known as data modeling. Once an object is known, it is labeled with a class of objects that defines the kind of data it contains and any logic sequences that can manipulate it. Each distinct logic sequence is known as a method. Objects can communicate with well-defined interfaces called messages.",
             "postP2": "What are the main principles of Object-Oriented Programming? The four principles of object-oriented programming are encapsulation, abstraction, inheritance,and polymorphism.",
-            "postP3": "Hi"
+            "postP3": "Encapsulation",
+            "postP4": "Say we have a program. It has a few logically different objects which communicate with each other — according to the rules defined in the program. Encapsulation is achieved when each object keeps its state private, inside a class. Other objects don’t have direct access to this state. Instead, they can only call a list of public functions — called methods. So, the object manages its own state via methods — and no other class can touch it unless explicitly allowed. If you want to communicate with the object, you should use the methods provided. But (by default), you can’t change the state.",
+            "postP5": "Abstraction",
+            "postP6": "Applying abstraction means that each object should only expose a high-level mechanism for using it. This mechanism should hide internal implementation details. It should only reveal operations relevant for the other objects. Think — a coffee machine. It does a lot of stuff and makes quirky noises under the hood. But all you have to do is put in coffee and press a button. Preferably, this mechanism should be easy to use and should rarely change over time. Think of it as a small set of public methods which any other class can call without “knowing” how they work.",
+            "postP7": "Inheritance",
+            "postP8": "Objects are often very similar. They share common logic. But they’re not entirely the same. Ugh… So how do we reuse the common logic and extract the unique logic into a separate class? One way to achieve this is inheritance.It means that you create a (child) class by deriving from another (parent) class. This way, we form a hierarchy. The child class reuses all fields and methods of the parent class (common part) and can implement its own (unique part).",
+            "postP9": "Polymorphism",
+            "postP10": "Simply put, polymorphism gives a way to use a class exactly like its parent so there’s no confusion with mixing types. But each child class keeps its own methods as they are. This typically happens by defining a (parent) interface to be reused. It outlines a bunch of common methods. Then, each child class implements its own version of these methods. Any time a collection (such as a list) or a method expects an instance of the parent (where common methods are outlined), the language takes care of evaluating the right implementation of the common method — regardless of which child is passed."
         },
         {
             "id" : 2,
@@ -17,7 +24,7 @@
             "blogTitle": "Restful API?",
             "postedOn": "02 July, 2020",
             "author": "Hayley Choi",
-            "blogImage": "restful_api.png",
+            "blogImage": "restAPI.png",
             "postP1": "There’s a high chance you came across the term “REST API” if you’ve thought about getting data from another source on the internet, such as Twitter or Github. But what is a REST API? What can it do for you? How do you use it? Let’s say you’re trying to find videos about Batman on Youtube. You open up Youtube, type “Batman” into a search field, hit enter, and you see a list of videos about Batman. A REST API works in a similar way. You search for something, and you get a list of results back from the service you’re requesting from. An API is an application programming interface. It is a set of rules that allow programs to talk to each other. The developer creates the API on the server and allows the client to talk to it. REST determines how the API looks like. It stands for “Representational State Transfer”. It is a set of rules that developers follow when they create their API. One of these rules states that you should be able to get a piece of data (called a resource) when you link to a specific URL. Each URL is called a request while the data sent back to you is called a response.",
             "postP2": "It’s important to know that a request is made up of four things: The endpoint, The method, The headers, The data (or body). The endpoint (or route) is the url you request for. The root-endpoint is the starting point of the API you’re requesting from. The root-endpoint of Github’s API is https://api.github.com while the root-endpoint Twitter’s API is https://api.twitter.com. The path determines the resource you’re requesting for.",
             "postP3": "A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.A RESTful API -- also referred to as a RESTful web service or REST API -- is based on representational state transfer (REST), an architectural style and approach to communications often used in web services development. REST technology is generally preferred over the more robust Simple Object Access Protocol (SOAP) technology because REST uses less bandwidth, making it more suitable for efficient internet usage."
@@ -29,9 +36,16 @@
             "postedOn": "03 July, 2020",
             "author": "Hayley Choi",
             "blogImage": "tdd.png",
-            "postP1": "Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the code is improved so that the tests pass. This is opposed to software development that allows code to be added that is not proven to meet requirements. 1. Add a test, 2. Run all tests and see if the new test fails, 3. Write the code, 4. Run tests, 5. Refactor code, Repeat",
-            "postP2": "Test-Driven Development starts with designing and developing tests for every small functionality of an application. TDD instructs developers to write new code only if an automated test has failed. This avoids duplication of code. The full form of TDD is Test-driven development. The simple concept of TDD is to write and correct the failed tests before writing new code (before development). This helps to avoid duplication of code as we write a small amount of code at a time in order to pass tests. Test-Driven development is a process of developing and running automated test before actual development of the application.",
-            "postP3": "Advantages of TDD: Early bug notification. Better Designed, cleaner and more extensible code, Confidence to Refactor Summary: It is a process of modifying the code in order to pass a test designed previously. It more emphasis on production code rather than test case design. Test-driven development is a process of modifying the code in order to pass a test designed previously. TDD includes refactoring a code i.e. changing/adding some amount of code to the existing code without affecting the behavior of the code. TDD when used, the code becomes clearer and simple to understand."
+            "postP1": "Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the code is improved so that the tests pass. This is opposed to software development that allows code to be added that is not proven to meet requirements.",
+            "postP2": "1. Add a test", 
+            "postP3": "2. Run all tests and see if the new test fails", 
+            "postP4": "3. Write the code", 
+            "postP5": "4. Run tests", 
+            "postP6": "5. Refactor code, Repeat",
+            "postP7": "Test-Driven Development starts with designing and developing tests for every small functionality of an application. TDD instructs developers to write new code only if an automated test has failed. This avoids duplication of code. The full form of TDD is Test-driven development. The simple concept of TDD is to write and correct the failed tests before writing new code (before development). This helps to avoid duplication of code as we write a small amount of code at a time in order to pass tests. Test-Driven development is a process of developing and running automated test before actual development of the application.",
+            "postP8": "Advantages of TDD",
+            "postP9": "Early bug notification. Better Designed, cleaner and more extensible code, Confidence to Refactor",
+            "postP10": "Summary: It is a process of modifying the code in order to pass a test designed previously. It more emphasis on production code rather than test case design. TDD includes refactoring a code i.e. changing/adding some amount of code to the existing code without affecting the behavior of the code. TDD when used, the code becomes clearer and simple to understand."
         },
         {
             "id": 4,
@@ -39,10 +53,16 @@
             "blogTitle": "React",
             "postedOn": "03 July, 2020",
             "author": "Hayley Choi",
-            "blogImage": "reactJS.png",
-            "postP1": "React JS is a JavaScript library used in web development to build interactive elements on websites. React is created by Facebook and specializes in helping developers build user interfaces, or UIs. In terms of websites and web applications, UIs are the collection of on-screen menus, search bars, buttons, and anything else someone interacts with to USE a website or app. Before React JS, developers were stuck building UIs by hand with “vanilla JavaScript” or with less UI-focused React predecessors like jQuery. That meant longer development times and plenty of opportunities for errors and bugs. So, in 2011, Facebook engineer Jordan Walke created React JS specifically to improve UI development.", 
-            "postP2": "React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.",
-            "postP3": "Declarative: React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug. Component-Based: Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM."
+            "blogImage": "React_component.png",
+            "postP1": "React JS is a JavaScript library used in web development to build interactive elements on websites. React is created by Facebook and specializes in helping developers build user interfaces, or UIs. In terms of websites and web applications, UIs are the collection of on-screen menus, search bars, buttons, and anything else someone interacts with to USE a website or app. Before React JS, developers were stuck building UIs by hand with “vanilla JavaScript” or with less UI-focused React predecessors like jQuery. That meant longer development times and plenty of opportunities for errors and bugs. So, in 2011, Facebook engineer Jordan Walke created React JS specifically to improve UI development.",
+            "postP2": "Declarative",
+            "postP3": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.",
+            "postP4": "Component-Based",
+            "postP5": "Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.",
+            "postP6": "A Simple Component",
+            "postP7": "React components implement a render() method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via this.props.",
+            "postP8": "A Stateful Component",
+            "postP9": "In addition to taking input data (accessed via this.props), a component can maintain internal state data (accessed via this.state). When a component’s state data changes, the rendered markup will be updated by re-invoking render()."
         },
         {
             "id": 5,
@@ -50,10 +70,28 @@
             "blogTitle": "AJAX",
             "postedOn": "03 July, 2020",
             "author": "Hayley Choi",
-            "blogImage": "ajax.png",
+            "blogImage": "axios.png",
             "postP1": "Ajax is short for Asynchronous JavaScript and XML, which refers to a set of web development techniques rather than an actual programming language. Although X in Ajax stands for XML, JSON is used more than XML nowadays because of its many advantages such as being lighter and a part of JavaScript. Both JSON and XML are used for packaging information in the Ajax model. Ajax however, is widely used in client side programming to allow for data to be sent and received to and from a database / server. What's special about using Ajax programming is that you can exchange data in the background without actually disturbing the user experience. This method is extremely useful both for website performance and usability. Since asynchronous loading is non-render blocking, it will allow your page's HTML to continue parsing even if it encounters a script tag. From a usability standpoint, visitors can benefit from seeing certain information generated without having to reload the page.",
-            "postP2": "hello",
-            "postP3": "using Ajax programming methods is not a programming language in and of itself. Rather, it combines multiple technologies in a manner that renders the access of data more efficiently and effectively."
+            "postP2": "AXIOS",
+            "postP3": "Axios is a promise-based HTTP client for the browser and Node. js. Axios makes it easy to send asynchronous HTTP requests to REST endpoints and perform CRUD operations. It can be used in plain JavaScript or with a library such as Vue or React.",
+            "postP4": "The purpose of the AXIOS library is simply to make AJAX requests, it means that it is a very small and light library. In addition to having a very simple and lean implementation. Another important feature is the compatibility with several different browsers.",
+            "postP5": "Basically it uses the AXIOS resource, or HTTP verb of the request (get, post, put, patch, delete, options, head), and uses the then() method to retrieve the promise, which is returned in case of success, and the method catch() which is the return of an exception. The get() method expects two parameters, the first is the URL that will be made the AJAX request, and the second is optional, which is the data that will be sent.",
+            "postP6": "Using Ajax programming methods is not a programming language in and of itself. Rather, it combines multiple technologies in a manner that renders the access of data more efficiently and effectively."
+        },
+        {
+            "id": 6,
+            "blogCategory": "Programming",
+            "blogTitle": "Promises and Async/Await",
+            "postedOn": "17 July, 2020",
+            "author": "Hayley Choi",
+            "blogImage": "asyncAwait.png",
+            "postP1": "Using promises, we can write asynchronous programs in a more manageable way. Using Async/Await syntax, a promise-based asynchronous code can be written in a synchronous format which saves a lot of time and code becomes scalable.",
+            "postP2": "JavaScript executes code in a single thread, which makes it blocking. each function call and console.log statement is executing in series AKA in a synchronous manner. This means until the function a has returned, the next line of code won’t be called. By default, a function with no return statement returns undefined value.",
+            "postP3": "The word “async” before a function means one simple thing: a function always returns a promise. Other values are wrapped in a resolved promise automatically.",
+            "postP5": "So, async ensures that the function returns a promise, and wraps non-promises in it. Simple enough, right? But not only that. There’s another keyword, await, that works only inside async functions, and it’s pretty cool.",
+            "postP6": "The keyword await makes JavaScript wait until that promise settles and returns its result.",
+            "postP7": "Let’s emphasize: await literally makes JavaScript wait until the promise settles, and then go on with the result. That doesn’t cost any CPU resources, because the engine can do other jobs in the meantime: execute other scripts, handle events, etc.",
+            "postP8": "Together they provide a great framework to write asynchronous code that is easy to both read and write. With async/await we rarely need to write promise.then/catch, but we still shouldn’t forget that they are based on promises, because sometimes we have to use these methods. Also Promise.all is nice when we are waiting for many tasks simultaneously."
         }
     ]
 }
