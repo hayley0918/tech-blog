@@ -22,7 +22,8 @@ const BlogPost = (props) =>{
         postP7: "",
         postP8: "",
         postP9: "",
-        postP10: ""
+        postP10: "",
+        postP11: ""
     })
     const [postId, setPostId] = useState('')
     
@@ -59,6 +60,7 @@ const BlogPost = (props) =>{
                         <p>{post.postP8}</p>
                         <p>{post.postP9}</p>
                         <p>{post.postP10}</p>
+                        <p>{post.postP11}</p>
                     </article>
                 </div>
             </Card>
