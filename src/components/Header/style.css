@@ -4,7 +4,7 @@
     margin: 10px 0;
 }
 
-.headerMenu a{
+.headerMenu li{
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
@@ -13,7 +13,7 @@
     letter-spacing: 1.2px;
 }
 
-.headerMenu a:hover{
+.headerMenu li:hover{
     color: #5f9ea0;
 }
 
