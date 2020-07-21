@@ -5,7 +5,7 @@ const Header = props =>{
     return(
        <header className="header">
            <nav className="headerMenu">
-               <a href="/">Home</a>
+               <a href="/tech-blog">Home</a>
                <a href="/about-me">About Me</a>
            </nav>
            <div className="sns-icons">
