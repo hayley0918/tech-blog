@@ -6,7 +6,7 @@ const Header = props =>{
     return(
        <header className="header">
            <nav className="headerMenu">
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/tech-blog">Home</NavLink>
                 <NavLink to="/about-me">About Me</NavLink>
            </nav>
            <div className="sns-icons">
