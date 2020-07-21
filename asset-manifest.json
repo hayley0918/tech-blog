@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tech-blog/static/css/main.059d90f5.chunk.css",
-    "main.js": "/tech-blog/static/js/main.880dbbaa.chunk.js",
-    "main.js.map": "/tech-blog/static/js/main.880dbbaa.chunk.js.map",
+    "main.js": "/tech-blog/static/js/main.b1203155.chunk.js",
+    "main.js.map": "/tech-blog/static/js/main.b1203155.chunk.js.map",
     "runtime-main.js": "/tech-blog/static/js/runtime-main.8f48c446.js",
     "runtime-main.js.map": "/tech-blog/static/js/runtime-main.8f48c446.js.map",
     "static/js/2.1fcf55ef.chunk.js": "/tech-blog/static/js/2.1fcf55ef.chunk.js",
     "static/js/2.1fcf55ef.chunk.js.map": "/tech-blog/static/js/2.1fcf55ef.chunk.js.map",
     "index.html": "/tech-blog/index.html",
-    "precache-manifest.ef803672ed2e8c828278416a1d0cdd32.js": "/tech-blog/precache-manifest.ef803672ed2e8c828278416a1d0cdd32.js",
+    "precache-manifest.d960b70d441881dd2c59ba3090475b94.js": "/tech-blog/precache-manifest.d960b70d441881dd2c59ba3090475b94.js",
     "service-worker.js": "/tech-blog/service-worker.js",
     "static/css/main.059d90f5.chunk.css.map": "/tech-blog/static/css/main.059d90f5.chunk.css.map",
     "static/js/2.1fcf55ef.chunk.js.LICENSE.txt": "/tech-blog/static/js/2.1fcf55ef.chunk.js.LICENSE.txt",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.8f48c446.js",
     "static/js/2.1fcf55ef.chunk.js",
     "static/css/main.059d90f5.chunk.css",
-    "static/js/main.880dbbaa.chunk.js"
+    "static/js/main.b1203155.chunk.js"
   ]
 }
