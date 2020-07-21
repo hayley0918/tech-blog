@@ -6,8 +6,8 @@ const Header = props =>{
     return(
        <header className="header">
            <nav className="headerMenu">
-                <li><NavLink to="/tech-blog">Home</NavLink></li>
-                <li><NavLink to="/about-me">About Me</NavLink></li>
+                <a><NavLink to="/tech-blog">Home</NavLink></a>
+                <a><NavLink to="/about-me">About Me</NavLink></a>
            </nav>
            <div className="sns-icons">
                <a href="https://github.com/hayley0918"><img src={require("../../assets/icons/github.png")} alt="github icon"/></a>
