@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './style.css'
 import Card from '../UI/Card'
 import blogPost from '../../data/blog.json'
 import { NavLink } from 'react-router-dom'
 
 
-const Sidebar = (props) =>{
+const Sidebar = props =>{
 
     const [posts, setPosts] = useState([])
     
