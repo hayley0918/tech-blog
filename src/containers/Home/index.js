@@ -18,7 +18,7 @@ const Home = props =>{
                             <span>Programming</span>
                             <h2>What is OOP?</h2>
                             <p>OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them...</p>
-                            <NavLink to="/post/1">Read more</NavLink>
+                            <div><NavLink to="/post/1">Read more</NavLink></div>
                         </div>
                     </Card>
                     <Card style={{marginBottom:'20px'}}>
@@ -29,7 +29,7 @@ const Home = props =>{
                             <span>Programming</span>
                             <h2>Rest API</h2>
                             <p>A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. It is also referred to as a RESTful web service or REST API is based on representational state transfer (REST), an architectural style and approach to communications often used in web services development...</p>
-                            <NavLink to="/post/2">Read more</NavLink>
+                            <div><NavLink to="/post/2">Read more</NavLink></div>
                         </div>
                     </Card>
                     <Card style={{marginBottom:'20px'}}>
@@ -40,7 +40,7 @@ const Home = props =>{
                             <span>Programming</span>
                             <h2>TDD</h2>
                             <p>Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the code is improved so that the tests pass...</p>
-                            <NavLink to="/post/3">Read more</NavLink>
+                            <div><NavLink to="/post/3">Read more</NavLink></div>
                         </div>
                     </Card>
                 </div>

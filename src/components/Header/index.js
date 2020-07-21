@@ -1,13 +1,13 @@
 import React from 'react'
 import './style.css'
-import { NavLink } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const Header = props =>{
     return(
        <header className="header">
            <nav className="headerMenu">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about-me">About Me</NavLink>
+                <a><NavLink to="/tech-blog">Home</NavLink></a>
+                <a><NavLink to="/about-me">About Me</NavLink></a>
            </nav>
            <div className="sns-icons">
                <a href="https://github.com/hayley0918"><img src={require("../../assets/icons/github.png")} alt="github icon"/></a>
