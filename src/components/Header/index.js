@@ -1,12 +1,12 @@
 import React from 'react'
 import './style.css'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = props =>{
     return(
        <header className="header">
            <nav className="headerMenu">
-                <NavLink to="/tech-blog">Home</NavLink>
+                <NavLink to="/">Home</NavLink>
                 <NavLink to="/about-me">About Me</NavLink>
            </nav>
            <div className="sns-icons">
