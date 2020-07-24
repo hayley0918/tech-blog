@@ -1,3 +1,19 @@
+# App Title
+
+Hayley's tech note
+
+https://hayley0918.github.io/tech-blog/
+
+## App Description
+I built a note format blog website to collect the information about programming concepts and technology I am interested in.
+
+## Built with
+- React
+
+## Deployment
+- Github
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
